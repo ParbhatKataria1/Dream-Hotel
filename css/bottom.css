@@ -1,0 +1,24 @@
+.bottom {
+    width: 92%;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+
+.bottom>ul {
+    width: 30%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+
+.bottom>ul>li {
+    padding: 4px 10px;
+    cursor: pointer;
+    color: rgb(95, 95, 95);
+}
+
+.bottom>ul>li:hover {
+    color: black;
+}
