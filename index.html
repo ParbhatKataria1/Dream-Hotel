@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daddy's Hotel</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/destination.css">
+    <link rel="stylesheet" href="./css/bottom.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="curtain">
+        <div class="cross" onclick="x()" style="font-size: 43px;">&times</div>
+        <div id="content">
+            <p>ARE YOU A PROPERTY OWNER/MANAGER?</p>
+            <a href="">List New Property</a>
+            <a href="">Sign In To Your Dashboard</a><br>
+            <hr>
+            <p style="margin-top:74px">HOLIDAY HOMES FOR SALE</p>
+            <a href="">Tripvillas Managed <br>
+                Homes from A grade developers. Rentals guaranteed</a><br>
+            <a href="">Marketplace <br>
+                See what homes are up for sale from different property owners.</a>
+            <hr>
+            <a href="">About Us</a><br>
+            <a href="">Privacy Policy</a><br>
+            <a href="">Terms of Use</a><br>
+            <a href="">FAQs</a><br>
+            <a href="">Contact Us</a><br>
+            <hr>
+            <p>© Tripvillas Pte Ltd</p><br>
+
+        </div>
+    </div>
+    <div class="nav">
+        <div>
+            <a id="logo" href="https://imgbb.com/"><img src="https://i.ibb.co/yVV1brN/pro.png" alt="pro" border="0"></a>
+        </div>
+        <div>
+
+            <svg id="login" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                data-svg="user">
+                <circle fill="white" stroke="#000" stroke-width="1.1" cx="9.9" cy="6.4" r="4.4"></circle>
+                <path fill="white" stroke="#000" stroke-width="1.1"
+                    d="M1.5,19 C2.3,14.5 5.8,11.2 10,11.2 C14.2,11.2 17.7,14.6 18.5,19.2"></path>
+            </svg>
+
+            <div id="inr">
+                <span id="curr_value">INR</span>
+                <svg id="currency" fill="white" width="20" height="20" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg" data-svg="triangle-down">
+
+                    <polygon points="5 7 15 7 10 12"></polygon>
+                </svg>
+            </div>
+            <svg onclick="open1()" id="toggle" fill="white" width="20" height="20" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon">
+                <rect y="9" width="20" height="2"></rect>
+                <rect y="3" width="20" height="2"></rect>
+                <rect y="15" width="20" height="2"></rect>
+            </svg>
+        </div>
+
+    </div>
+    <div id="currency-elements">
+        <p>AED</p>
+        <p>AUD</p>
+        <p>BRL</p>
+        <p>CAD</p>
+        <p>CHF</p>
+        <p>CZK</p>
+        <p>DKK</p>
+        <p>EUR</p>
+        <p>GBP</p>
+        <p>HKD</p>
+        <p>HUF</p>
+        <p>ILS</p>
+        <p>INR</p>
+        <p>JPY</p>
+        <p>MXN</p>
+
+    </div>
+    <div id="login-form">
+        <p>SIGN IN</p>
+        <P>SIGN UP</P>
+    </div>
+    <div class="search">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+        <div>
+            <div class="search-content">
+                <h2>
+                    Book <span style="text-decoration: line-through;">Hotels</span> Vacation Rentals <br>
+                    Top Holiday Homes - Villas, Apartments & Homestays
+                </h2>
+                <div class="search-box">
+                    <div class="align">
+                        <img height="56px" src="https://cdn.iconscout.com/icon/free/png-128/search-1289-433864.png"
+                            alt="">
+                        <input id="location" width="100%" type="text" placeholder=Location>
+                    </div>
+                    <div class="align">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            data-svg="sign-in">
+                            <polygon points="7 2 17 2 17 17 7 17 7 16 16 16 16 3 7 3"></polygon>
+                            <polygon points="9.1 13.4 8.5 12.8 11.28 10 4 10 4 9 11.28 9 8.5 6.2 9.1 5.62 13 9.5">
+                            </polygon>
+                        </svg>
+                        <input type="date" placeholder="Check In">
+                        <input type="date" placeholder="Check Out">
+                    </div>
+                    <select class="align" name="guest" id="guest">
+                        <option value="">Select Guests</option>
+                    </select>
+                    <button id="buttons" class="align">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="destination">
+        <h1>Top Destination</h1>
+        <div class="dest-elem">
+            <div>
+                <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                    alt="">
+                <div class="second-content">
+                    <div>
+                        <h3>Kenisha Holiday Homes</h3>
+                        <p>Pawasalwadi, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="second-main">
+        <div class="second-one">
+            <div>
+
+                <h2>Fully Managed Communities By Tripvillas</h2>
+            </div>
+            <div class="cards">
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/housekeeper.svg" alt="">
+                    <p>High Quality housekeeping</p>
+                </div>
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/towel.svg" alt="">
+                    <p>Comfortable Linen and Toiletries</p>
+                </div>
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/bed.svg" alt="">
+                    <p>Quality Furniture & Fittings</p>
+                </div>
+                <div>
+                    <img src="	https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/dinner.svg" alt="">
+                    <p>Food Delivery Or Central Restaurant</p>
+                </div>
+            </div>
+        </div>
+        <div class="second-second">
+            <div class="second-cards">
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16724/photo_200/3cfe907bf1a711e9924e0a8e1b1ce4da_photo_200.jpeg"
+                        alt="">
+                    <div class="second-content">
+                        <div>
+                            <h3>Kenisha Holiday Homes</h3>
+                            <p>Pawasalwadi, Maharashtra</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_200/3a17e0ebf71b11e992500a8e1b1ce4da_photo_200.jpeg"
+                        alt="">
+                    <div class="second-content">
+                        <div>
+                            <h3>Tata Rio De Goa</h3>
+                            <p>Dabolim, Goa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16722/photo_200/d9d86936f1a311e9924e0a8e1b1ce4da_photo_200.jpeg"
+                        alt="">
+                    <div class="second-content">
+                        <div>
+                            <h3>White Villas Shahapur</h3>
+                            <p>Shahapur, Maharashtra</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16723/photo_200/14650812f1a811e9924e0a8e1b1ce4da_photo_200.jpeg"
+                        alt="">
+                    <div class="second-content">
+                        <div>
+                            <h3>White Villas Kasara</h3>
+                            <p>Kasara, Maharashtra</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16721/photo_200/a85131caf1a511e9924e0a8e1b1ce4da_photo_200.jpeg"
+                        alt="">
+                    <div class="second-content">
+                        <div>
+                            <h3>Puravankara Adora De Goa</h3>
+                            <p>Dabolim, Goa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16727/photo_200/92a02d4af1a511e9924e0a8e1b1ce4da_photo_200.jpeg"
+                        alt="">
+                    <div class="second-content">
+                        <div>
+                            <h3>Dreamz Shiroda</h3>
+                            <p>Shiroda, Maharashtra</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16728/photo_200/de6bc87af1a411e9924e0a8e1b1ce4da_photo_200.jpeg"
+                        alt="">
+                    <div class="second-content">
+                        <div>
+                            <h3>Pristine Bay Mahabalipuram</h3>
+                            <p>Thenpattinam, Tamil Nadu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ? -->
+            </div>
+        </div>
+    </div>
+
+    <div class="two-cards">
+        <div class="one-card">
+            <h2>Holiday Home Investment Opportunities</h2>
+            <div>
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/growth.svg" alt="">
+                    <p>Low Cost High Appreciation</p>
+                </div>
+
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/maids.svg" alt="">
+                    <p>Professionally Managed</p>
+                </div>
+
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/give-money.svg" alt="">
+                    <p>Guaranteed To Produce Income</p>
+                </div>
+
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/plan.svg" alt="">
+                    <p>We Designed Floor Plans</p>
+                </div>
+            </div>
+            <button>EXPLORE INVESTMENT OPPORTUNITIES</button>
+        </div>
+
+        <div class="one-card">
+            <h2>Are You A Holiday Home Owner/Manager?</h2>
+            <div>
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/network.svg" alt="">
+                    <p>Get Bookings From 100+ Websites</p>
+                </div>
+
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/layout.svg" alt="">
+                    <p>One Dashboard - Total Control</p>
+                </div>
+
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/flash.svg" alt="">
+                    <p>Instant Book Or Request To Book</p>
+                </div>
+
+                <div>
+                    <img src="https://d2vcelvjdj7n25.cloudfront.net/newhome/icons/smartphone-call.svg" alt="">
+                    <p>Both iOS & Android App Available.</p>
+                </div>
+            </div>
+            <button>LIST YOUR PROPERTY</button>
+        </div>
+    </div>
+
+    <div class="destination">
+        <h1>Vacation Ideas</h1>
+        <div class="dest-elem">
+            <div>
+                <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                    alt="">
+                <div class="second-content">
+                    <div>
+                        <h2>Phuket's Best Pool Villas</h2>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="bottom">
+        <h1>Holiday Homes Across The Globe</h1>
+        <ul>
+            <li>
+                ASIA
+            </li>
+            <li>
+                EUROPE
+            </li>
+            <li>
+                NORTH AMERICA
+            </li>
+        </ul>
+        <hr>
+    </div>
+</body>
+<script src="./js/nav.js">
+</script>
+
+</html>
