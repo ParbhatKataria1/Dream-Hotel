@@ -1,5 +1,34 @@
 // for toggle
 
+
+let data = [];
+// fetch("https://636c87a7ad62451f9fcc651b.mockapi.io/locations")
+//     .then((res) => res.json())
+//     .then((dat) => {
+//         data = dat;
+//         display(dat);
+//     })
+//     .catch((error) => {
+//         alert(error)
+//     })
+function display(dat) {
+    console.log(dat)
+}
+
+function dest(dat) {
+
+}
+
+function midsection(dat) {
+
+}
+
+function vacation(dat) {
+
+}
+
+
+
 function open1() {
     document.querySelector(".curtain").style.width = "20%"
 }
@@ -63,15 +92,40 @@ window.addEventListener("mouseup", function (event) {
 })
 
 let eject = document.querySelectorAll("#eject_country>div");
-console.log(eject)
+// console.log(eject)
+let bottom_button = document.querySelectorAll(".bottom-section>ul>li");
+// console.log(bottom_button[0].innerText)
 let j;
-for (let i = 0; i < eject.length; i++) {
-    eject[i].addEventListener("click", () => {
+for (let i = 0; i < bottom_button.length; i++) {
+    bottom_button[i].addEventListener("click", (event) => {
+        // console.log(event.target.innerText)
+        let tag = document.querySelector("#selector");
+
         eject[i].style.width = "92%";
+        bottom_button[i].style.color = "black";
+
         j = (i + 1) % eject.length;
         eject[j].style.width = "0%"
-        j = (i + 1) % eject.length;
+        bottom_button[j].style.color = "gray";
+
+        j = (i + 2) % eject.length;
+        bottom_button[j].style.color = "gray";
         eject[j].style.width = "0%"
+
+
+        if (event.target.innerText == "ASIA") {
+            tag.style.left = "0px"
+            tag.style.width = "60px"
+        }
+        if (event.target.innerText == "EUROPE") {
+            tag.style.left = "125px"
+            tag.style.width = "80px"
+        }
+        // console.log(event.target.innerText)
+        if (event.target.innerText == "NORTH AMERICA") {
+            tag.style.left = "275px"
+            tag.style.width = "140px"
+        }
     })
 }
 
