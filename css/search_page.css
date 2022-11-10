@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#nav-sticky {
+    position: fixed;
+    z-index: 1;
+}
+
+.map {
+    display: flex;
+}
+
+.map_content {
+    width: 60%;
+    border: 1px solid red;
+    height: 100%;
+    overflow: auto;
+}
+
+.map_content::-webkit-scrollbar {
+    display: none;
+}
+
+#map-top-sticky {
+    position: sticky;
+    top: 80px;
+    background-color: white;
+    z-index: 2;
+}
+
+.map_content-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 22px;
+    top: 100px;
+
+}
+
+.map_content-top>button {
+    background-color: white;
+    display: flex;
+    padding: 3px 10px;
+    min-width: 143px;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(207, 207, 207);
+
+}
+
+.map_content-mid {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 84px;
+    padding: 23px;
+}
+
+#sort {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    position: relative;
+}
+
+#valuesort {
+    background-color: rgb(216, 216, 216);
+    width: 0px;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    top: 40px;
+}
+
+#valuesort>p {
+
+    padding: 0px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+#valuesort>p:hover {
+    background-color: rgb(52, 145, 203);
+    color: white;
+}
+
+.map-innercontent {
+    position: relative;
+    top: 100px;
+}
+
+.map-cards {
+    width: 100%;
+}
+
+.map-cards>div {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    margin-bottom: 34px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.map-cards img {
+    width: 300px;
+    height: 300px;
+}
+
+.data {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    height: 150px;
+    padding: 10px 10px 10px 20px;
+    justify-content: space-between;
+    margin-left: 0px;
+}
+
+.map-cards button {
+    background-color: white;
+    padding: 3px 10px;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.content-hover:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
+.map>.map_map {
+    width: 40%;
+    border: 1px solid blue;
+    height: 100%;
+}
+
+
+.align {
+    display: flex;
+}

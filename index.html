@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./css/destination.css">
     <link rel="stylesheet" href="./css/bottom.css">
     <style>
-
     </style>
 </head>
 
@@ -86,7 +85,6 @@
         <p>INR</p>
         <p>JPY</p>
         <p>MXN</p>
-
     </div>
     <div id="login-form">
         <p>SIGN IN</p>
@@ -100,26 +98,35 @@
                     Book <span style="text-decoration: line-through;">Hotels</span> Vacation Rentals <br>
                     Top Holiday Homes - Villas, Apartments & Homestays
                 </h2>
-                <div class="search-box">
-                    <div class="align">
-                        <img height="56px" src="https://cdn.iconscout.com/icon/free/png-128/search-1289-433864.png"
-                            alt="">
-                        <input id="location" width="100%" type="text" placeholder=Location>
+                <div id="alert-location">
+                    <div class="search-box">
+                        <div id="location-box" class="align">
+                            <img height="56px" src="https://cdn.iconscout.com/icon/free/png-128/search-1289-433864.png"
+                                alt="">
+                            <!-- location -->
+                            <input id="location" width="100%" type="text" placeholder=Location>
+                        </div>
+                        <div class="align">
+                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                data-svg="sign-in">
+                                <polygon points="7 2 17 2 17 17 7 17 7 16 16 16 16 3 7 3"></polygon>
+                                <polygon points="9.1 13.4 8.5 12.8 11.28 10 4 10 4 9 11.28 9 8.5 6.2 9.1 5.62 13 9.5">
+                                </polygon>
+                            </svg>
+                            <!-- checkin -->
+                            <input id="checkin" type="date" placeholder="Check In">
+                            <!-- checkout -->
+                            <input id="checkout" type="date" placeholder="Check Out">
+                        </div>
+                        <!-- guest -->
+                        <select class="align" name="guest" id="guest">
+                            <option value="">Select Guests</option>
+                            <option value="1">1 guest</option>
+                        </select>
+                        <!-- button -->
+                        <button id="buttons" class="align">Search</button>
                     </div>
-                    <div class="align">
-                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-                            data-svg="sign-in">
-                            <polygon points="7 2 17 2 17 17 7 17 7 16 16 16 16 3 7 3"></polygon>
-                            <polygon points="9.1 13.4 8.5 12.8 11.28 10 4 10 4 9 11.28 9 8.5 6.2 9.1 5.62 13 9.5">
-                            </polygon>
-                        </svg>
-                        <input type="date" placeholder="Check In">
-                        <input type="date" placeholder="Check Out">
-                    </div>
-                    <select class="align" name="guest" id="guest">
-                        <option value="">Select Guests</option>
-                    </select>
-                    <button id="buttons" class="align">Search</button>
+                    <div id="alert-msg"></div>
                 </div>
             </div>
         </div>
@@ -127,7 +134,7 @@
     <div class="destination">
         <h1>Top Destination</h1>
         <div class="dest-elem">
-            <div>
+            <!-- <div>
                 <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
                     alt="">
                 <div class="second-content">
@@ -136,10 +143,78 @@
                         <p>Pawasalwadi, Maharashtra</p>
                     </div>
                 </div>
+            </div> -->
+            <div class="main-carousel" data-flickity='{"wrapAround":true, "autoPlay":true}'>
+                <div class="carousel-cell">
+                    <div>
+                        <img src="
+                            https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                            alt="">
+                        <div class="second-content">
+                            <div>
+                                <h3>Kenisha Holiday Homes</h3>
+                                <p>Pawasalwadi, Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div>
+                        <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                            alt="">
+                        <div class="second-content">
+                            <div>
+                                <h3>Kenisha Holiday Homes</h3>
+                                <p>Pawasalwadi, Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-cell">
+                    <div>
+                        <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                            alt="">
+                        <div class="second-content">
+                            <div>
+                                <h3>Kenisha Holiday Homes</h3>
+                                <p>Pawasalwadi, Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-cell">
+                    <div>
+                        <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                            alt="">
+                        <div class="second-content">
+                            <div>
+                                <h3>Kenisha Holiday Homes</h3>
+                                <p>Pawasalwadi, Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-cell">
+                    <div>
+                        <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                            alt="">
+                        <div class="second-content">
+                            <div>
+                                <h3>Kenisha Holiday Homes</h3>
+                                <p>Pawasalwadi, Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-
         </div>
+
+    </div>
 
     </div>
 
@@ -313,7 +388,7 @@
                     alt="">
                 <div class="second-content">
                     <div>
-                        <h2>Phuket's Best Pool Villas</h2>
+                        <h2>Phuket' s Best Pool Villas</h2>
                     </div>
                 </div>
             </div>
@@ -323,23 +398,203 @@
 
     </div>
 
-    <div class="bottom">
+    <div class="bottom-section">
         <h1>Holiday Homes Across The Globe</h1>
         <ul>
-            <li>
+            <li value="asia">
                 ASIA
             </li>
-            <li>
+            <li value="europe">
                 EUROPE
             </li>
-            <li>
+            <li value="north-america">
                 NORTH AMERICA
             </li>
         </ul>
+
+        <hr id="selector">
         <hr>
+        <div id="eject_country">
+
+            <div id="asia" class="contenent">
+                <div>
+                    <h4>India</h4>
+                    <p>3245 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Thailand</h4>
+                    <p>1234 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Sri Lanka</h4>
+                    <p>345 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Indonesia</h4>
+                    <p>222 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Philippines</h4>
+                    <p>359 holiday homes</p>
+                </div>
+                <div>
+                    <h4>United Arab Emirates</h4>
+                    <p>894 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Georgia</h4>
+                    <p>114 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Turkey</h4>
+                    <p>1930 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Israel</h4>
+                    <p>456 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Malaysia</h4>
+                    <p>545 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Japan</h4>
+                    <p>890 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Viet Nam</h4>
+                    <p>909 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Cambodia</h4>
+                    <p>434 holiday homes</p>
+                </div>
+            </div>
+
+            <div id="europe" class="contenent">
+                <div>
+                    <h4>Croatia</h4>
+                    <p>323 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Denmark</h4>
+                    <p>1211 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Italy</h4>
+                    <p>1312 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Spain</h4>
+                    <p>1413 holiday homes</p>
+                </div>
+                <div>
+                    <h4>France</h4>
+                    <p>222 holiday homes</p>
+                </div>
+                <div>
+                    <h4>France</h4>
+                    <p>312 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Switzerland</h4>
+                    <p>232 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Finland</h4>
+                    <p>124 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Germany</h4>
+                    <p>134 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Hungary</h4>
+                    <p>431 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Austria</h4>
+                    <p>890 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Greece</h4>
+                    <p>909 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Nethelands</h4>
+                    <p>434 holiday homes</p>
+                </div>
+            </div>
+
+            <div id="north-america" class="contenent">
+                <div>
+                    <h4>United States</h4>
+                    <p>212 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Mexico</h4>
+                    <p>232 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Dominican Republic</h4>
+                    <p>424 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Cuba</h4>
+                    <p>124 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Canada</h4>
+                    <p>644 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Costa Rica</h4>
+                    <p>1231 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Jamaica</h4>
+                    <p>1345 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Aruba</h4>
+                    <p>134 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Puerto Rico</h4>
+                    <p>164 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Saint Martin</h4>
+                    <p>534 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Sint Maarten</h4>
+                    <p>146 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Belize</h4>
+                    <p>564 holiday homes</p>
+                </div>
+                <div>
+                    <h4>Panama</h4>
+                    <p>234 holiday homes</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
-<script src="./js/nav.js">
+<script src="./js/nav.js"></script>
+<script src="./js/search.js"></script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSaZoGiTVJeSEwtMLIubpvXKrfRiqwL8Q&libraries=places"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var autocomplete = new google.maps.places.Autocomplete((document.getElementById("location")), {
+            types: ['geocode'],
+        })
+    });
 </script>
 
 </html>

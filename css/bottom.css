@@ -1,11 +1,12 @@
-.bottom {
+.bottom-section {
     width: 92%;
     margin: auto;
     margin-top: 45px;
     margin-bottom: 100px;
+    position: relative;
 }
 
-.bottom>ul {
+.bottom-section>ul {
     width: 30%;
     list-style: none;
     display: flex;
@@ -13,12 +14,60 @@
     margin-top: 23px;
 }
 
-.bottom>ul>li {
+.bottom-section>ul>li {
     padding: 4px 10px;
     cursor: pointer;
     color: rgb(95, 95, 95);
 }
 
-.bottom>ul>li:hover {
+.bottom-section>ul>li[value="asia"] {
     color: black;
+}
+
+/* bottom css */
+
+.contenent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 92%;
+    margin: auto;
+    gap: 22px;
+    color: rgb(92, 92, 92);
+    position: absolute;
+    top: 123px;
+    overflow: hidden;
+
+}
+
+.contenent>div:hover {
+    cursor: pointer;
+}
+
+.contenent>div>h4:hover,
+.contenent>div>p:hover {
+    color: black;
+}
+
+#europe {
+    width: 0px;
+}
+
+#north-america {
+    width: 0px;
+}
+
+
+/* hr highlight of bottom section */
+
+hr {
+    background-color: gray;
+}
+
+#selector {
+    width: 60px;
+    border-top: 1px solid rgb(0, 92, 198);
+    background-color: rgb(0, 92, 198);
+    position: absolute;
+    left: 0;
+    top: 87px;
 }

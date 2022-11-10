@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daddy's Hotel/Search</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/search_page.css">
+</head>
+
+<body>
+    <div class="curtain">
+        <div class="cross" onclick="x()" style="font-size: 43px;">&times</div>
+        <div id="content">
+            <p>ARE YOU A PROPERTY OWNER/MANAGER?</p>
+            <a href="">List New Property</a>
+            <a href="">Sign In To Your Dashboard</a><br>
+            <hr>
+            <p style="margin-top:74px">HOLIDAY HOMES FOR SALE</p>
+            <a href="">Tripvillas Managed <br>
+                Homes from A grade developers. Rentals guaranteed</a><br>
+            <a href="">Marketplace <br>
+                See what homes are up for sale from different property owners.</a>
+            <hr>
+            <a href="">About Us</a><br>
+            <a href="">Privacy Policy</a><br>
+            <a href="">Terms of Use</a><br>
+            <a href="">FAQs</a><br>
+            <a href="">Contact Us</a><br>
+            <hr>
+            <p>© Tripvillas Pte Ltd</p><br>
+
+        </div>
+    </div>
+    <div class="nav" id="nav-sticky">
+        <div>
+            <a id="logo" href="./index.html"><img src="https://i.ibb.co/yVV1brN/pro.png" alt="pro" border="0"></a>
+        </div>
+        <div>
+
+            <svg id="login" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                data-svg="user">
+                <circle fill="white" stroke="#000" stroke-width="1.1" cx="9.9" cy="6.4" r="4.4"></circle>
+                <path fill="white" stroke="#000" stroke-width="1.1"
+                    d="M1.5,19 C2.3,14.5 5.8,11.2 10,11.2 C14.2,11.2 17.7,14.6 18.5,19.2"></path>
+            </svg>
+
+            <div id="inr">
+                <span id="curr_value">INR</span>
+                <svg id="currency" fill="white" width="20" height="20" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg" data-svg="triangle-down">
+
+                    <polygon points="5 7 15 7 10 12"></polygon>
+                </svg>
+            </div>
+            <svg onclick="open1()" id="toggle" fill="white" width="20" height="20" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon">
+                <rect y="9" width="20" height="2"></rect>
+                <rect y="3" width="20" height="2"></rect>
+                <rect y="15" width="20" height="2"></rect>
+            </svg>
+        </div>
+
+    </div>
+    <div id="currency-elements">
+        <p>AED</p>
+        <p>AUD</p>
+        <p>BRL</p>
+        <p>CAD</p>
+        <p>CHF</p>
+        <p>CZK</p>
+        <p>DKK</p>
+        <p>EUR</p>
+        <p>GBP</p>
+        <p>HKD</p>
+        <p>HUF</p>
+        <p>ILS</p>
+        <p>INR</p>
+        <p>JPY</p>
+        <p>MXN</p>
+    </div>
+    <div id="login-form">
+        <p>SIGN IN</p>
+        <P>SIGN UP</P>
+    </div>
+
+    <div class="map">
+        <div class="map_content">
+            <div id="map-top-sticky">
+                <div class="map_content-top">
+                    <button class="content-hover">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            data-svg="settings">
+                            <ellipse fill="none" stroke="#000" cx="6.11" cy="3.55" rx="2.11" ry="2.15"></ellipse>
+                            <ellipse fill="none" stroke="#000" cx="6.11" cy="15.55" rx="2.11" ry="2.15"></ellipse>
+                            <circle fill="none" stroke="#000" cx="13.15" cy="9.55" r="2.15"></circle>
+                            <rect x="1" y="3" width="3" height="1"></rect>
+                            <rect x="10" y="3" width="8" height="1"></rect>
+                            <rect x="1" y="9" width="8" height="1"></rect>
+                            <rect x="15" y="9" width="3" height="1"></rect>
+                            <rect x="1" y="15" width="3" height="1"></rect>
+                            <rect x="10" y="15" width="8" height="1"></rect>
+                        </svg>
+                        APPLY FILTERS</button>
+                    <button class="content-hover">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            data-svg="calendar">
+                            <path
+                                d="M 2,3 2,17 18,17 18,3 2,3 Z M 17,16 3,16 3,8 17,8 17,16 Z M 17,7 3,7 3,4 17,4 17,7 Z">
+                            </path>
+                            <rect width="1" height="3" x="6" y="2"></rect>
+                            <rect width="1" height="3" x="13" y="2"></rect>
+                        </svg>
+                        MODIFY SEARCH</button>
+                </div>
+                <hr>
+            </div>
+
+            <div class="map_content-mid">
+                <p id="total_results">Total 26 results</p>
+                <div id="sort" class="content-hover">Sort By <span id="changesort"
+                        style="color: #1e87f0;">Relevance</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                        data-svg="chevron-down">
+                        <polyline fill="none" stroke="#000" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                    </svg>
+                    <div id="valuesort">
+                        <!-- <p>Relevance</p> -->
+                        <p id="sortinc">Price (Low To High)</p>
+                        <p id="sortdec">Price (High To Low)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-innercontent">
+                <div class="map-cards">
+                    <div>
+                        <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_280x210/11950773/3cbe8c98524511e996fd0a92a929817e_mid_thumbnail.jpg"
+                            alt="">
+                        <div class="data">
+                            <div class="content-hover">
+                                <h1>Title</h1>
+                                <p style="color: blue">location</p>
+                            </div>
+                            <div>
+                                <button class="content-hover">STUDIO</button>
+                                <button class="content-hover">MAX 2 GUESTS</button>
+                                <button class="content-hover">WIFI</button>
+                                <button class="content-hover">TV</button>
+                            </div>
+                            <div class="align content-hover">
+                                <h1>price</h1>
+                                <span style="color: gray; padding:8px 0 0 9px">per night</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13783.413494877706!2d75.8417637!3d30.2697587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1668061480294!5m2!1sen!2sin"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+<script src="./js/query.js">
+</script>
+
+</html>
