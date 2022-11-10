@@ -61,3 +61,17 @@ window.addEventListener("mouseup", function (event) {
         change_sign = false;
     }
 })
+
+let eject = document.querySelectorAll("#eject_country>div");
+console.log(eject)
+let j;
+for (let i = 0; i < eject.length; i++) {
+    eject[i].addEventListener("click", () => {
+        eject[i].style.width = "92%";
+        j = (i + 1) % eject.length;
+        eject[j].style.width = "0%"
+        j = (i + 1) % eject.length;
+        eject[j].style.width = "0%"
+    })
+}
+
