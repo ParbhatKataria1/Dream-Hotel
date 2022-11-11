@@ -7,23 +7,47 @@
 
 
 .dest-elem {
-    display: grid;
-    margin-top: 22px;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 27px;
+    background-color: white;
+    margin-top: 34px;
+    color: white;
 }
 
 .dest-elem>div {
-    width: 250px;
-    height: 160px;
     position: relative;
-
 }
 
-.dest-elem>div>img {
-    width: 100%;
-    height: 100%;
+.dest-elem>div img {
+    width: 261px;
+    height: 166px;
+    object-fit: cover;
 }
+
+.second-content {
+    width: 261px;
+    height: 166px;
+    position: absolute;
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+}
+
+.second-content1 {
+    width: 261px;
+    height: 166px;
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.7);
+    color: white;
+}
+
+.second-content>div {
+    width: 80%;
+}
+
 
 
 /* ============================== */
