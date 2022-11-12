@@ -1,3 +1,10 @@
+let money = JSON.parse(localStorage.getItem("money")) || [];
+
+if (money.length) {
+    document.querySelector("#curr_value").innerHTML = money[money.length - 1]
+}
+
+
 let hei = window.innerHeight - document.querySelector(".nav").style.height;
 console.log(`${hei}px`)
 document.querySelector(".map").style.height = `${hei}px`
@@ -22,7 +29,9 @@ let results = [];
 function display(dat) {
     console.log(dat)
     results = dat.filter((elem) => {
-
+        if (data == undefined) {
+            return true;
+        }
         let temp = data.name.toLowerCase();
         return elem.name.toLowerCase().includes(temp);
     })
@@ -34,6 +43,7 @@ function display(dat) {
 function showresult(result) {
     let result_data = document.querySelector(".map-cards");
     result_data.innerHTML = "";
+    document.querySelector("#total_results").innerHTML = `Total ${result.length} Results`;
     for (let i = 0; i < result.length; i++) {
         let maindiv = document.createElement("div");
 
@@ -136,3 +146,141 @@ document.querySelector("#sortdec").addEventListener("click", () => {
             display(newdata)
         });
 })
+
+
+
+
+
+// for toggle
+
+let email = JSON.parse(localStorage.getItem("email")) || [];
+
+function open1() {
+    document.querySelector(".curtain").style.width = "20%"
+}
+function x() {
+    document.querySelector(".curtain").style.width = "0%"
+}
+
+
+// for currency
+let change1 = false;
+let currency = document.querySelector("#currency-elements");
+
+
+window.addEventListener("mouseup", function (event) {
+    let elem = document.querySelector("#inr");
+    if (event.target == elem || event.target.parentNode == elem) {
+        if (change1 == false) {
+            currency.style.width = "20%"
+            change1 = true;
+        }
+        else {
+            currency.style.width = "0"
+            change1 = false;
+        }
+    }
+    else if (event.target != currency && event.target.parentNode != currency) {
+        currency.style.width = "0";
+        change1 = false;
+    }
+})
+
+
+
+let curr_ele = document.querySelectorAll("#currency-elements>p");
+for (let i = 0; i < curr_ele.length; i++) {
+    curr_ele[i].addEventListener("click", (f) => {
+        money.push(curr_ele[i].outerText);
+        localStorage.setItem("money", JSON.stringify(money));
+        document.querySelector("#curr_value").innerHTML = curr_ele[i].outerText
+    });
+}
+
+
+// code for login form
+let change_sign = false;
+let login = document.querySelector("#login");
+let login_form = document.querySelector("#login-form")
+window.addEventListener("mouseup", function (event) {
+    if (event.target == login || event.target.parentNode == login) {
+        if (change_sign == false) {
+            login_form.style.width = "100px";
+            login_form.style.padding = "10px 80px 10px 20px";
+            change_sign = true;
+        }
+        else {
+            login_form.style.width = "0px";
+            login_form.style.padding = "0px";
+            change_sign = false;
+        }
+    }
+    else if (event.target != login_form && event.target.parentNode != login_form) {
+        login_form.style.width = "0px";
+        login_form.style.padding = "0px";
+        change_sign = false;
+    }
+})
+
+if (email.length) {
+    console.log(email[email.length - 1])
+    let h4 = document.createElement("h4").innerHTML = email[email.length - 1]
+    document.querySelector("#login-icon").append(h4)
+}
+
+
+// document.querySelector("#form").addEventListener("submit", (event) => {
+//     event.preventDefault()
+//     let flag = false;
+//     let email = document.querySelector("#email").value;
+
+
+//     if (email == "") {
+//         alert("Please Enter Your Email ID")
+//     }
+//     else {
+//         document.querySelector(".signin").style.height = "0";
+//         localStorage.setItem("email", JSON.stringify(email));
+//         let heading = document.querySelectorAll("#login-icon>h4");
+//         for (let i = 0; i < heading.length; i++) {
+//             heading[i].remove()
+//         }
+//         let h4 = document.createElement("h4");
+//         h4.innerHTML = email;
+//         h4.style.marginLeft = "23px"
+
+//         document.querySelector("#login-icon").append(h4);
+
+//     }
+// })
+
+window.addEventListener("click", (event) => {
+    let value = document.querySelector("#login-form");
+    // let form = document.querySelector("#form");
+    if (event.target == value || event.target.parentNode == value) {
+        document.querySelector(".signin").style.height = "100vh";
+    }
+    // else if ((event.target != form && event.target.parentNode != form)) {
+    //     document.querySelector(".signin").style.height = "0";
+    // }
+})
+
+window.addEventListener("click", (event) => {
+    let value = document.querySelector("#login-form");
+    if (event.target == value || event.target.parentNode == value) {
+
+        document.querySelector("#login-form").style.width = "0";
+        document.querySelector("#login-form").style.padding = "0";
+    }
+})
+
+
+// code for the index slider footer
+
+let eject = document.querySelectorAll("#eject_country>div");
+// console.log(eject)
+let bottom_button = document.querySelectorAll(".bottom-section>ul>li");
+
+
+
+

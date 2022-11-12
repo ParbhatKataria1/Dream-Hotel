@@ -20,6 +20,8 @@
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="./css/submit.css">
+
     <style>
         * {
             font-family: ProximaNovaLight, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -55,10 +57,11 @@
     </div>
     <div class="nav">
         <div>
-            <a id="logo" href="https://imgbb.com/"><img src="https://i.ibb.co/yVV1brN/pro.png" alt="pro" border="0"></a>
+            <a id="logo" href="./index.html"><img src="https://i.ibb.co/yVV1brN/pro.png" alt="pro" border="0"></a>
         </div>
         <div>
-
+            <div id="login-icon">
+            </div>
             <svg id="login" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
                 data-svg="user">
                 <circle fill="white" stroke="#000" stroke-width="1.1" cx="9.9" cy="6.4" r="4.4"></circle>
@@ -104,6 +107,13 @@
         <p>SIGN IN</p>
         <P>SIGN UP</P>
     </div>
+    <div class="signin">
+        <form id="form" action="">
+            <label for="">Enter Your Email-Sign Up</label><br>
+            <input id="email" type="email" placeholder="Email"><br>
+            <input id="email-submit" type="submit">
+        </form>
+    </div>
     <div class="search">
         <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
         <div>
@@ -143,33 +153,12 @@
                     <div id="alert-msg"></div>
                 </div>
             </div>
+
         </div>
     </div>
     <div class="destination">
         <h1>Top Destination</h1>
         <div class="dest-elem">
-            <div>
-                <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
-                    alt="">
-                <div class="second-content1">
-                    <div>
-                        <h3>Kenisha Holiday Homes</h3>
-                        <p>Pawasalwadi, Maharashtra</p>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
-                    alt="">
-                <div class="second-content1">
-                    <div>
-                        <h3>Kenisha Holiday Homes</h3>
-                        <p>Pawasalwadi, Maharashtra</p>
-                    </div>
-                </div>
-            </div>
-
 
             <div>
                 <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
@@ -182,7 +171,6 @@
                 </div>
             </div>
 
-
             <div>
                 <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
                     alt="">
@@ -193,18 +181,39 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/lonavala-2293.ab3b797cddf6.jpg"
+                    alt="">
+                <div class="second-content1">
+                    <div>
+                        <h3>Dreamz Shiroda</h3>
+                        <p>Pawasalwadi, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                    alt="">
+                <div class="second-content1">
+                    <div>
+                        <h3>Tata Rio De Goa</h3>
+                        <p>Vacation Rentals</p>
+                    </div>
+                </div>
+            </div>
 
             <div>
                 <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
                     alt="">
                 <div class="second-content1">
                     <div>
-                        <h3>Kenisha Holiday Homes</h3>
-                        <p>Pawasalwadi, Maharashtra</p>
+                        <h3>
+                            Kandy
+                        </h3>
+                        <p>Vacation Rentals</p>
                     </div>
                 </div>
             </div>
-
             <div>
                 <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
                     alt="">
@@ -216,8 +225,6 @@
                 </div>
             </div>
         </div>
-
-    </div>
 
     </div>
 
@@ -353,7 +360,7 @@
                     <p>We Designed Floor Plans</p>
                 </div>
             </div>
-            <button>EXPLORE INVESTMENT OPPORTUNITIES</button>
+            <button> <a href="./invest.html">EXPLORE INVESTMENT OPPORTUNITIES</a> </button>
         </div>
 
         <div class="one-card">
@@ -386,36 +393,90 @@
     <div class="destination">
         <h1>Vacation Ideas</h1>
         <div class="dest-elem">
-            <!-- <div>
+
+            <div>
                 <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
                     alt="">
-                <div class="second-content">
+                <div class="second-content1">
                     <div>
-                        <h2>Phuket' s Best Pool Villas</h2>
+                        <h3>Phuket</h3>
+                        <p>Pawasalwadi, Maharashtra</p>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
+            <div>
+                <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                    alt="">
+                <div class="second-content1">
+                    <div>
+                        <h3>Kenisha Holiday Homes</h3>
+                        <p>Pawasalwadi, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/lonavala-2293.ab3b797cddf6.jpg"
+                    alt="">
+                <div class="second-content1">
+                    <div>
+                        <h3>Dreamz Shiroda</h3>
+                        <p>Pawasalwadi, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                    alt="">
+                <div class="second-content1">
+                    <div>
+                        <h3>Tata Rio De Goa</h3>
+                        <p>Vacation Rentals</p>
+                    </div>
+                </div>
+            </div>
 
+            <div>
+                <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                    alt="">
+                <div class="second-content1">
+                    <div>
+                        <h3>
+                            Kandy
+                        </h3>
+                        <p>Vacation Rentals</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/home-small/goa-11.f1c86735cec4.jpg"
+                    alt="">
+                <div class="second-content1">
+                    <div>
+                        <h3>Kenisha Holiday Homes</h3>
+                        <p>Pawasalwadi, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 
     <div class="bottom-section">
         <h1>Holiday Homes Across The Globe</h1>
-        <ul>
-            <li value="asia">
-                ASIA
-            </li>
-            <li value="europe">
-                EUROPE
-            </li>
-            <li value="north-america">
-                NORTH AMERICA
-            </li>
-        </ul>
+        <div>
+            <div id="asia1" value="asia">
+                <p>ASIA</p>
+                <hr class="selector">
+            </div>
+            <div bor id="europe1" value="europe">
+                <p>EUROPE</p>
+            </div>
+            <div id="north-america1" value="north-america">
+                <p>NORTH AMERICA</p>
+            </div>
+        </div>
 
-        <hr id="selector">
         <hr>
         <div id="eject_country">
 
@@ -585,6 +646,8 @@
             </div>
         </div>
     </div>
+
+    <div style="margin-bottom: 34px;">''</div>
 </body>
 <script src="./js/nav.js"></script>
 <script src="./js/search.js"></script>

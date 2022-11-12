@@ -10,6 +10,12 @@
     background-color: white;
     margin-top: 34px;
     color: white;
+    cursor: grab;
+}
+
+.dest-elem:focus {
+
+    cursor: grabbing;
 }
 
 .dest-elem>div {
@@ -17,7 +23,7 @@
 }
 
 .dest-elem>div img {
-    width: 261px;
+    width: 95.7%;
     height: 166px;
     object-fit: cover;
 }
@@ -32,7 +38,7 @@
 }
 
 .second-content1 {
-    width: 261px;
+    width: 5.65%;
     height: 166px;
     top: 0;
     position: absolute;
@@ -103,7 +109,7 @@
 }
 
 .second-cards>div {
-    width: 200px;
+    width: 100%;
     height: 150px;
     position: relative;
 
@@ -166,4 +172,45 @@
     background-color: #1e87f0;
     color: white;
     border: none;
+    cursor: pointer;
+}
+
+.one-card>button>a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media all and (max-width: 1001px) {
+    .second-content1 {
+        width: 6.4%;
+    }
+
+    .second-main {
+        flex-direction: column;
+    }
+
+    .second-one {
+        width: 100%;
+    }
+
+    .second-second {
+        width: 100%;
+        margin-top: 34px;
+    }
+
+    .second-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .two-cards {
+        flex-direction: column;
+    }
+
+    .one-card {
+        width: 92%;
+        margin: auto;
+        margin-bottom: 23px;
+    }
 }

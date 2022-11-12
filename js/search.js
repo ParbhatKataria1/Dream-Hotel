@@ -28,9 +28,8 @@ function getdata() {
     let obj = {
         name, checkin, checkout, guest
     }
-    console.log(1)
     localStorage.setItem("data", JSON.stringify(obj));
-    window.location.replace('../search.html');
+    window.location.replace('./search.html');
 
 }
 
