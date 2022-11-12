@@ -24,7 +24,7 @@
 }
 
 .search-content {
-    width: 70%;
+    width: 1000px;
     font-size: 21px;
 }
 
@@ -57,7 +57,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 50px;
-    padding: 4px 7px 4px 7px;
+    padding: 3px 15px;
     background-color: white;
 
 }
@@ -80,6 +80,7 @@
 .search-box select {
     border: none;
     font-size: 18px;
+    font-size: 16px;
 }
 
 .search-box input:focus {
@@ -93,7 +94,7 @@
 }
 
 #location {
-    width: 390px;
+    width: 250px;
 }
 
 #buttons {
@@ -102,4 +103,31 @@
     background-color: #1e87f0;
     color: white;
     cursor: pointer;
+}
+
+
+@media all and (max-width: 1001px) {
+
+
+
+    .search-content {
+        width: 95%;
+        padding-bottom: 23px;
+    }
+
+    .search-box {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        padding: 0px;
+    }
+
+    .align {
+        width: 100%;
+        margin: unset;
+    }
+
+    #buttons {
+        margin: unset;
+        /* width: 100%; */
+    }
 }
