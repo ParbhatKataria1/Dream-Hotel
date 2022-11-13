@@ -1,11 +1,10 @@
 // for toggle
-
 let email = JSON.parse(localStorage.getItem("email")) || [];
 // localStorage.clear()
 
 let money = JSON.parse(localStorage.getItem("money")) || [];
 function open1() {
-    document.querySelector(".curtain").style.width = "20%"
+    document.querySelector(".curtain").style.width = "300px"
 }
 function x() {
     document.querySelector(".curtain").style.width = "0%"
@@ -20,7 +19,7 @@ window.addEventListener("mouseup", function (event) {
     let elem = document.querySelector("#inr");
     if (event.target == elem || event.target.parentNode == elem) {
         if (change == false) {
-            currency.style.width = "20%"
+            currency.style.width = "300px"
             change = true;
         }
         else {

@@ -106,9 +106,7 @@
 }
 
 
-@media all and (max-width: 1001px) {
-
-
+@media all and (min-width:575px) and (max-width: 1001px) {
 
     .search-content {
         width: 95%;
@@ -117,6 +115,38 @@
 
     .search-box {
         grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        padding: 0px;
+    }
+
+    .align {
+        width: 100%;
+        margin: unset;
+    }
+
+    #buttons {
+        margin: unset;
+        /* width: 100%; */
+    }
+}
+
+@media all and (max-width: 575px) {
+
+
+
+    .search>img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .search-content {
+        width: 95%;
+        padding-bottom: 23px;
+    }
+
+    .search-box {
+        grid-template-columns: repeat(1, 100%);
         height: 100%;
         padding: 0px;
     }

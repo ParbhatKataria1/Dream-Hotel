@@ -9,13 +9,13 @@
     width: 100%;
     background-color: #262626;
     position: relative;
-    z-index: 2;
+    z-index: 9;
 }
 
 #logo>img {
     width: 170px;
     /* border: 4px solid white; */
-    margin: 13px;
+    margin: 23px;
     margin-left: 53px;
 }
 
@@ -157,4 +157,66 @@
 #login-form>p:hover {
     cursor: pointer;
     color: black;
+}
+
+
+
+@media all and (min-width:575px) and (max-width:1001px) {
+
+    #nav-sticky {
+        height: 100px;
+        z-index: 9;
+    }
+
+    #currency-elements {
+        right: 36px;
+    }
+
+    #login-icon {
+        top: 53px;
+        width: 241px;
+        position: absolute;
+        right: -21px;
+    }
+}
+
+
+@media all and (max-width:574px) {
+    .nav {
+        flex-direction: column;
+        /* align-content: space-around; */
+        height: 135px;
+        z-index: 9;
+    }
+
+    #logo>img {
+        display: block;
+        margin: auto;
+    }
+
+    .nav>div:nth-child(2) {
+        justify-content: space-around;
+        margin-bottom: 28px;
+    }
+
+
+
+    #login-form {
+        top: 120px;
+        left: 19px;
+    }
+
+    #login-icon {
+        top: 90px;
+        /* width: auto; */
+        position: absolute;
+        /* left: 0px; */
+    }
+
+    #currency-elements {
+        width: 240px;
+        right: 17px;
+        top: 102px;
+    }
+
 }

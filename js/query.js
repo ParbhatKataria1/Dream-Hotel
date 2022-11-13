@@ -156,7 +156,7 @@ document.querySelector("#sortdec").addEventListener("click", () => {
 let email = JSON.parse(localStorage.getItem("email")) || [];
 
 function open1() {
-    document.querySelector(".curtain").style.width = "20%"
+    document.querySelector(".curtain").style.width = "300px"
 }
 function x() {
     document.querySelector(".curtain").style.width = "0%"
@@ -172,7 +172,7 @@ window.addEventListener("mouseup", function (event) {
     let elem = document.querySelector("#inr");
     if (event.target == elem || event.target.parentNode == elem) {
         if (change1 == false) {
-            currency.style.width = "20%"
+            currency.style.width = "300px"
             change1 = true;
         }
         else {
@@ -223,6 +223,7 @@ window.addEventListener("mouseup", function (event) {
 })
 
 if (email.length) {
+    console.log(email)
     console.log(email[email.length - 1])
     let h4 = document.createElement("h4").innerHTML = email[email.length - 1]
     document.querySelector("#login-icon").append(h4)
