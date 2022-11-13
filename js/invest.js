@@ -1,6 +1,6 @@
 let data = [];
 let change = false;
-let email_list = localStorage.getItem("email") || ["parbhatkataria628@gmail.com"];
+let email_list = JSON.parse(localStorage.getItem("email")) || [];
 
 
 fetch("https://636e0580182793016f33d214.mockapi.io/locations")
@@ -121,9 +121,11 @@ document.querySelector("#form").addEventListener("submit", (event) => {
     let flag = false;
     let email = document.querySelector("#email").value;
     for (let i = 0; i < email_list.length; i++) {
-        if (email_list[i] == email) flag = true;
-    }
+        if (email_list[i] == email) {
 
+            flag = true;
+        }
+    }
     if (!flag) {
         alert("Please Enter the valid email ID or Sign-Up")
     }
