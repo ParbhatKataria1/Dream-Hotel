@@ -107,8 +107,8 @@ window.addEventListener("mouseup", function (event) {
 
     if (event.target == elem || event.target.parentNode == elem) {
         if (change == false) {
-            valuesort.style.width = "216px"
-            valuesort.style.padding = "5px 17px 9px 11px"
+            valuesort.style.width = "155px"
+            valuesort.style.padding = "5px 0px 9px 11px"
             change = true;
         }
         else {
