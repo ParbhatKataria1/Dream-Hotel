@@ -81,12 +81,36 @@ hr {
     left: 0;
 }
 
-@media all and (max-width: 1001px) {
+
+
+@media all and (min-width:550px) and (max-width: 1001px) {
     .contenent {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .bottom-section>div {
         width: 68%;
+    }
+}
+
+@media all and (max-width: 549px) {
+    .contenent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    .bottom-section>div {
+        width: 100%;
+    }
+
+    #asia1,
+    #europe1,
+    #north-america1 {
+        margin-right: 10px;
+    }
+
+    .contenent {
+        top: 200px;
     }
 }

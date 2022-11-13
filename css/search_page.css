@@ -24,7 +24,7 @@
 
 #map-top-sticky {
     position: sticky;
-    top: 79px;
+    top: 100px;
     background-color: white;
     z-index: 2;
     border-bottom: 1px solid rgb(187, 185, 185);
@@ -67,7 +67,6 @@
 
 #valuesort {
     background-color: rgb(216, 216, 216);
-    width: 0px;
     z-index: 1;
     position: absolute;
     overflow: hidden;
@@ -148,7 +147,57 @@
     display: flex;
 }
 
-@media all and (max-width:1001px) {
+@media all and (min-width:575px) and (max-width:1001px) {
+
+    .data {
+        height: auto;
+    }
+
+    #map-top-sticky {
+        top: 97px;
+    }
+
+    .map_content-mid {
+        top: 94px;
+    }
+
+    .map-cards>div {
+        flex-direction: column;
+    }
+
+    .map-cards img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    #currency-elements {
+        right: 36px;
+    }
+}
+
+@media all and (max-width:574px) {
+    .nav {
+        flex-direction: column;
+        /* align-content: space-around; */
+    }
+
+    #logo>img {
+        display: block;
+        margin: auto;
+    }
+
+    .nav>div:nth-child(2) {
+        justify-content: space-around;
+    }
+
+    .map_content-top {
+        flex-direction: column;
+    }
+
+    .map_content-top>button {
+        margin-bottom: 12px;
+    }
 
     .data {
         height: auto;
@@ -161,5 +210,35 @@
     .map-cards img {
         width: 100%;
         object-fit: cover;
+    }
+
+    #map-top-sticky {
+        top: 135px;
+    }
+
+    .map_content-mid {
+        top: 130px;
+        flex-direction: column;
+        padding: 23px 23px 0px 23px;
+    }
+
+    #total_results {
+        margin-bottom: 12px;
+    }
+
+
+    #sort {
+        width: 152px;
+        align-items: center;
+    }
+
+    #valuesort {
+        width: 155px;
+        padding: 5px 0px 9px 11px;
+        right: 0px;
+    }
+
+    .map-innercontent {
+        top: 170px;
     }
 }
