@@ -19,7 +19,7 @@ window.addEventListener("mouseup", function (event) {
     let elem = document.querySelector("#inr");
     if (event.target == elem || event.target.parentNode == elem) {
         if (change == false) {
-            currency.style.width = "300px"
+            currency.style.width = "240px"
             change = true;
         }
         else {

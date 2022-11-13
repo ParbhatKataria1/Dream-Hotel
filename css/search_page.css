@@ -71,10 +71,13 @@
     position: absolute;
     overflow: hidden;
     top: 40px;
-    width: 152px;
     /* left: -18px; */
     right: -20px;
-    padding: 12px 7px 9px 16px;
+    /* width: 152px;
+    padding: 12px 7px 9px 16px; */
+
+    width: 0px;
+    padding: 0px;
 }
 
 #valuesort>p {
@@ -233,8 +236,8 @@
     }
 
     #valuesort {
-        width: 155px;
-        padding: 5px 0px 9px 11px;
+        /* width: 155px;
+        padding: 5px 0px 9px 11px; */
         right: 0px;
     }
 

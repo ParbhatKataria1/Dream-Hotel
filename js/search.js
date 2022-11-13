@@ -12,7 +12,7 @@ for (let i = 0; i < 49; i++) {
 document.querySelector("#buttons").addEventListener("click", getdata);
 
 function getdata() {
-    localStorage.clear()
+    localStorage.removeItem('data')
     let name = document.querySelector("#location").value;
     if (name == "") {
 
