@@ -126,7 +126,7 @@ document.querySelector("#form").addEventListener("submit", (event) => {
             flag = true;
         }
     }
-    if (!flag) {
+    if (!flag || email == "") {
         alert("Please Enter the valid email ID or Sign-Up")
     }
     else {
